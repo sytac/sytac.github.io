@@ -18,13 +18,16 @@
             font-size: 15px;
             font-weight: 300;
             color: white;
-
         }
         .next-meetup {
             margin-top: 50px;
             font-size: 25px;
             font-weight: 300;
             color: white;
+            a {
+                color:white;
+                text-decoration: underline;
+            }
         }
         .next-meetup-title {
             margin-top: 50px;
@@ -50,9 +53,9 @@
         color: white;
     }
     &:before, &:after {
-  content: '';
-  display: table;
-}
+      content: '';
+      display: table;
+    }
         text-align: inherit;
         width: 100%;
         margin-left: 0%;

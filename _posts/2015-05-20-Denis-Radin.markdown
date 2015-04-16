@@ -4,7 +4,7 @@ title:  "NASA coding standards applied to Javascript"
 speaker: Denis Radin
 date:   2015-05-20 17:00:00
 categories: meetup
-location: Haarlem
+location: "Haarlem"
 locationUrl: http://www.sytac.nl/contact/
 description: Short description
 ---
