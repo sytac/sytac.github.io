@@ -1,6 +1,16 @@
 ---
 layout: index
 ---
+{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+{% assign orderedPosts = site.posts | sort: 'date' %}
+{% for post in orderedPosts %}
+{% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
+{% if posttime > nowunix %}
+{% if nextMeetup  == nil%}
+{% assign nextMeetup = post %}
+{% endif %}
+{% endif %}
+{% endfor %}
 <div class="orange-goblin">
 <div class="dev-jam">
     <a href="#">
@@ -9,30 +19,28 @@ layout: index
     <div class="pay-off">
         Regular meetups for software developers. <br/><small>With food and drinks.</small>
     </div>
-        {% assign post = site.posts.first %}
-    {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
-    {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
+{% capture posttime %}{{nextMeetup.date | date: '%s'}}{% endcapture %}
 {% if posttime > nowunix %}
 <div class="next-meetup-title">
-{{post.title}}
+{{nextMeetup.title}}
 </div>
 <div class="next-meetup-speaker">
-by {{post.speaker}}
+by {{nextMeetup.speaker}}
 
 </div>
 <div class="next-meetup-description">
-{{post.description}}
+{{nextMeetup.description}}
 </div>
     <div class="next-meetup">
-{% assign d = post.date | date: "%-d"  %}
-{{ post.date | date: "%B" }}
+{% assign d = nextMeetup.date | date: "%-d"  %}
+{{ nextMeetup.date | date: "%B" }}
 {% case d %}
-{% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, {{ post.date | date: "%Y" }} -
-<a href="{{post.locationUrl}}">{{post.location}}</a>
+{% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, {{ nextMeetup.date | date: "%Y" }} -
+<a href="{{nextMeetup.locationUrl}}">{{nextMeetup.location}}</a>
     </div>
 
     {% else %}
-    no meetings planned
+    no nextMeetup planned
 {% endif %}
 
 </div>

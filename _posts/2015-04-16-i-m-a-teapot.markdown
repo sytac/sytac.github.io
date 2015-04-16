@@ -3,6 +3,11 @@ layout: post
 title:  "I'm a teapot"
 date:   2015-09-17 01:07:52
 categories: jekyll update
+speaker: Carlo Sciolla
+location: Haarlem
+locationUrl: http://www.sytac.nl/contact/
+categories: meetup
+description: Facetious communications protocol for controlling, monitoring, and diagnosing tea pots.
 ---
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.

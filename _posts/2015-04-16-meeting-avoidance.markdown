@@ -2,7 +2,12 @@
 layout: post
 title:  "Meeting avoidance"
 date:   2015-04-16 01:07:52
-categories: jekyll update
+speaker: Peter Hilton
+location: Haarlem
+locationUrl: http://www.sytac.nl/contact/
+categories: meetup
+description: How and when to avoid meetings and have more time to write code
+
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
