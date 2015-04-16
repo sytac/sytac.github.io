@@ -1,0 +1,44 @@
+---
+layout: index
+---
+<div class="orange-goblin">
+<div class="dev-jam">
+    <a href="#">
+        <img src="/images/devjam-logo.png">
+    </a>
+    <div class="pay-off">
+        Regular meetups for software developers. <br/><small>With food and drinks.</small>
+    </div>
+        {% assign post = site.posts.first %}
+    {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+    {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
+{% if posttime > nowunix %}
+<div class="next-meetup-title">
+{{post.title}}
+</div>
+<div class="next-meetup-speaker">
+by {{post.speaker}}
+
+</div>
+<div class="next-meetup-description">
+{{post.description}}
+</div>
+    <div class="next-meetup">
+{% assign d = post.date | date: "%-d"  %}
+{{ post.date | date: "%B" }}
+{% case d %}
+{% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, {{ post.date | date: "%Y" }} -
+<a href="{{post.locationUrl}}">{{post.location}}</a>
+    </div>
+
+    {% else %}
+    no meetings planned
+{% endif %}
+
+</div>
+</div>
+<div class="page-content">
+  <div class="wrapper">
+{{ content }}
+</div>
+</div>
