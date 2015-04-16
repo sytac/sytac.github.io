@@ -3,7 +3,7 @@ title: Sytac DevJams
 email: devjams@sytac.nl
 description: > # this means to ignore newlines until "baseurl:"
   Monthly meetups for developers, brought to you with <3 by the fine people at Sytac.
-baseurl: "devjam.sytac.nl" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: sytac
 github_username:  sytac
