@@ -3,33 +3,34 @@ layout: landing
 ---
 <div class="home">
     <h1 class="page-heading">DevJams</h1>
-  <ul class="post-list">
-    {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
-    {% assign orderedPosts = site.posts | sort: 'date' %}
-    {% for post in orderedPosts %}
-    {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
-    {% if posttime > nowunix %}
-    {% if nextMeetup  == nil%}
-    {% assign nextMeetup = post %}
-    {% endif %}
-    {% endif %}
-    {% endfor %}
-    {% for post in site.posts %}
-    {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
-    {% if posttime > nowunix %}
-    {% assign tense = 'future' %}
-    {% if upcoming  == nil%}
-    {% assign upcoming = post %}
-    <li><h3>Upcoming</h3></li>
-    {% endif %}
-    {% else %}
-    {% assign tense = 'past' %}
-    {% if previously  == nil%}
-    {% assign previously = post %}
-    <li><h3>Previous</h3></li>
-    {% endif %}
-    {% endif %}
-    <li>
+    <ul class="post-list">
+      {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+      {% assign orderedPosts = site.posts | sort: 'date' %}
+      {% for post in orderedPosts %}
+        {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
+        {% if posttime > nowunix %}
+          {% if nextMeetup  == nil%}
+            {% assign nextMeetup = post %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      {% for post in site.posts %}
+        {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
+          {% if posttime > nowunix %}
+            {% assign tense = 'future' %}
+              {% if upcoming  == nil%}
+                {% assign upcoming = post %}
+      <li><h3>Upcoming</h3></li>
+              {% endif %}
+              {% else %}
+                {% assign tense = 'past' %}
+                {% if previously  == nil%}
+                  {% assign previously = post %}
+      <li><h3>Previous</h3></li>
+                {% endif %}
+              {% endif %}
+      <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
         <h2>
