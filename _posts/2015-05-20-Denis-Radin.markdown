@@ -1,12 +1,15 @@
 ---
 layout: post
-title:  "NASA coding standards applied to Javascript"
+title:  Applying NASA coding standards to Javascript
+description: > #
+  NASA <a href="http://en.wikipedia.org/wiki/Jet_Propulsion_Laboratory">JPL</a> coding guidelines for Javascript for higher performance, reliability and the better world.
 speaker: Denis Radin
+website: {url: 'http://pixelscommander.com/en', 'title' : 'Pixels Commander'}
+bio: Front-end developer with passion for experiments and performance optimization.
 date:   2015-05-20 17:00:00
 categories: meetup
 location: "Haarlem"
 locationUrl: http://www.sytac.nl/contact/
-description: Why frontend developers will save aviation.
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

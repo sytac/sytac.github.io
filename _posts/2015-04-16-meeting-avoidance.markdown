@@ -1,30 +1,18 @@
 ---
 layout: post
-title:  "Meeting avoidance"
-date:   2015-04-16 01:07:52
+categories: meetup
+title: Meeting avoidance
+description: How and when to avoid meetings and have more time to write code.
+date: 2015-04-16 01:07:52
 speaker: Peter Hilton
+bio: > #
+  Freelance software developer, writer,
+  public speaker, and amateur musician.
+website: {'url': 'http://hilton.org.uk/', title: 'some title'}
 location: Haarlem
 locationUrl: http://www.sytac.nl/contact/
-categories: meetup
-description: How and when to avoid meetings and have more time to write code
 
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Meetings are a problem for any organisations, because they dull the attention-span of otherwise intelligent people, and prevent otherwise productive people from getting any work done. Software developers suffer more than most, because they can’t even pretend that they’re getting any work done when they’re sitting in meetings. After all, getting your laptop out and writing code during a meeting is (rightly) considered rude.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
-
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help
+This presentation introduces various approaches that software developers can use to reduce the number of meetings in their organisation, so they have more time to write code. In particular, developer contributions to project management can drastically reduce the number of meetings.
