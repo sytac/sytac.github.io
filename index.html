@@ -2,20 +2,43 @@
 layout: landing
 ---
 <div class="home">
-    <h1 class="page-heading">All DevJams</h1>
+    <h1 class="page-heading">DevJams</h1>
+    <ul class="post-list">
+      {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+      {% assign orderedPosts = site.posts | sort: 'date' %}
+      {% for post in orderedPosts %}
+        {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
+        {% if posttime > nowunix %}
+          {% if nextMeetup  == nil%}
+            {% assign nextMeetup = post %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
 
-  <ul class="post-list">
-    {% for post in site.posts reversed %}
+      {% for post in site.posts %}
+        {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
+          {% if posttime > nowunix %}
+            {% assign tense = 'future' %}
+              {% if upcoming  == nil%}
+                {% assign upcoming = post %}
+      <li><h3>Upcoming</h3></li>
+              {% endif %}
+              {% else %}
+                {% assign tense = 'past' %}
+                {% if previously  == nil%}
+                  {% assign previously = post %}
+      <li><h3>Previous</h3></li>
+                {% endif %}
+              {% endif %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
         <h2>
-          <a class="post-link" href="/{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a class="post-link" href="{{ site.baseurl }}{{ post.url}}">{{ post.title }} - {{post.speaker}}</a>
         </h2>
-      </li>
+        <span>{{post.description}}</span>
+    </li>
     {% endfor %}
   </ul>
-
   <p class="rss-subscribe">subscribe <a href="/{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
 </div>
