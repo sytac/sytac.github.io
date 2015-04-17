@@ -2,11 +2,11 @@
 layout: post
 title:  Applying NASA coding standards to Javascript
 description: > #
-  NASA <a href="http://en.wikipedia.org/wiki/Jet_Propulsion_Laboratory">JPL</a> coding guidelines for Javascript for higher performance, reliability and the better world.
+  NASA JPL coding guidelines for Javascript for higher performance, reliability and the better world.
 speaker: Denis Radin
 website: {url: 'http://pixelscommander.com/en', 'title' : 'Pixels Commander'}
 bio: Front-end developer with passion for experiments and performance optimization.
-date:   2015-05-20 17:00:00
+date:   2015-05-20 17:00:00 +0200
 categories: meetup
 location: "Haarlem"
 locationUrl: http://www.sytac.nl/contact/

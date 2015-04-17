@@ -16,7 +16,7 @@ layout: index
     <a href="#">
         <!-- <embed src="images/devjam-logo.svg" type="image/svg+xml" /> -->
 
-        <img src="images/devjam-logo.png">
+        <img src="images/devjam-logo.svg">
     </a>
     <div class="pay-off">
         Regular meetups for software developers. <br/><small>With food and drinks.</small>
@@ -24,14 +24,14 @@ layout: index
 {% capture posttime %}{{nextMeetup.date | date: '%s'}}{% endcapture %}
 {% if posttime > nowunix %}
 <div class="next-meetup-title">
-{{nextMeetup.title}}
-</div>
-<div class="next-meetup-speaker">
-by {{nextMeetup.speaker}}
-
+<a href="{{ site.baseurl }}{{ nextMeetup.url}}">{{nextMeetup.title}}</a>
 </div>
 <div class="next-meetup-description">
-{{nextMeetup.description}}
+    <a href="{{ site.baseurl }}{{ nextMeetup.url}}">{{nextMeetup.description}}</a>
+</div>
+<div class="next-meetup-speaker">
+    <a href="{{ site.baseurl }}{{ nextMeetup.url}}">by {{nextMeetup.speaker}}</a>
+
 </div>
     <div class="next-meetup">
 {% assign d = nextMeetup.date | date: "%-d"  %}
