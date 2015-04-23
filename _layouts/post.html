@@ -4,13 +4,13 @@ layout: default
 <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
+    <h1 class="post-title">{% if page.meetupId %}<a href="http://www.meetup.com/Sytac-Dev-Jam/events/{{ page.meetupId }}/">{% endif %}{{ page.title }}{% if page.meetupId %}</a>{% endif %}</h1>
     <h3>{{page.description}}</h3>
-    <p class="post-meta">{% assign d = page.date | date: "%-d" %}
+    <p class="post-meta">{% if page.meetupId %}<a href="http://www.meetup.com/Sytac-Dev-Jam/events/{{ page.meetupId }}/">{% endif %}{% assign d = page.date | date: "%-d" %}
     {{ page.date | date: "%B" }}
     {% case d %}
-    {% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, {{ page.date | date: "%Y" }}
-    1700 hours food + drink, 1800 hours talk
+    {% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, {{ page.date | date: "%Y" }}{% if page.meetupId %}</a>{% endif %}
+    {% if page.meetupId %}<a href="http://www.meetup.com/Sytac-Dev-Jam/events/{{ page.meetupId }}/">{% endif %}1700 hours food + drink, 1800 hours talk {% if page.meetupId %}</a>{% endif %}
     {% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
     {% if page.speaker %}
     by
@@ -32,5 +32,12 @@ layout: default
   <h3>About {{page.speaker}}</h3>
   {{page.bio}}
   {% endif %}
+  {% endif %}
+  {% if page.meetupId %}
+  <br/>
+  <br/>
+  <a href="http://www.meetup.com/Sytac-Dev-Jam/events/{{ page.meetupId }}/" data-event="{{ page.meetupId }}" class="mu-rsvp-btn">Attend this meetup</a>
+
+
   {% endif %}
 </div>
