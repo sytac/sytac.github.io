@@ -11,6 +11,6 @@ categories: meetup
 location: "Haarlem"
 locationUrl: http://www.sytac.nl/contact/
 meetupId: 221908476
-meetupEmbedCode: 8isqa6ao39dc6qkbo2sti17ije
+meetupEmbedCode: 6fbd48hvnse6vd3oun475h91co
 ---
 Short description here.
