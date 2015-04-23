@@ -1,0 +1,30 @@
+.jump-items {
+	display: block;
+	list-style: none;
+	.jump-item {
+		height: auto;
+		display: block;
+	
+		.jump-description {
+			width: 100%;
+			text-align: center;
+			margin-top: 10px;
+		}
+		a {
+			color: black;
+			font-size: 16px;
+			font-weight: 300;
+		}
+	}
+}
+
+@include media-query-mf($on-laptop) {
+	.jump-items {
+		display: table-row;
+		.jump-item {
+
+			display: table-cell;
+			padding: 0px 20px;
+		}
+	}
+}
