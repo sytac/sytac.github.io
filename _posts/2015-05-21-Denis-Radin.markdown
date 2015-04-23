@@ -10,5 +10,6 @@ date:   2015-05-21 17:00:00 +0200
 categories: meetup
 location: "Haarlem"
 locationUrl: http://www.sytac.nl/contact/
+meetupid: 221908476
 ---
 Short description here.

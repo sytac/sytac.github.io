@@ -39,6 +39,12 @@ layout: index
 {% case d %}
 {% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, {{ nextMeetup.date | date: "%Y" }} -
 <a href="{{nextMeetup.locationUrl}}">{{nextMeetup.location}}</a>
+{% if nextMeetup.meetupid %}
+<br/>
+<a href="http://www.meetup.com/Sytac-Dev-Jam/events/{{ nextMeetup.meetupid }}/" data-event="{{ nextMeetup.meetupid }}" class="mu-rsvp-btn">RSVP</a>
+
+{% endif %}
+
     </div>
 
     {% else %}
