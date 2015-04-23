@@ -12,3 +12,7 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+
+# plugins
+gems:
+  - jekyll-redirect-from
