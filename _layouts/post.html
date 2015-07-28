@@ -10,7 +10,7 @@ layout: default
     {{ page.date | date: "%B" }}
     {% case d %}
     {% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, {{ page.date | date: "%Y" }}{% if page.meetupId %}</a>{% endif %}
-    {% if page.meetupId %}<a href="http://www.meetup.com/Sytac-Dev-Jam/events/{{ page.meetupId }}/">{% endif %}1700 hours food + drink, 1800 hours talk {% if page.meetupId %}</a>{% endif %}
+    {% if page.meetupId %}<a href="http://www.meetup.com/Sytac-Dev-Jam/events/{{ page.meetupId }}/">{% endif %}1830 hours food + drink, 1900 hours talk {% if page.meetupId %}</a>{% endif %}
     {% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
     {% if page.speaker %}
     by
