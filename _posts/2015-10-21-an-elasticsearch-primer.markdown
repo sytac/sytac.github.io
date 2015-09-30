@@ -1,16 +1,14 @@
 ---
 layout: post
-categories: meetup
-title: An ElasticSearch primer
-description: How to get started with ElasticSearch and its ecosystem
-date: 2015-10-21 17:00:00 +0200
+title: An ElasticSearch primer XXX
+description: > #
+    Get a first hand experience using ElasticSearch for fun and profit
 speaker: Carlo Sciolla
-bio: > #
-  A fanatic Clojurian, I like to surround
-  me with brilliant people. I'm currently
-  serving as the CTO for Sytac.
-website: {'url': 'http://skuro.tk/', title: 'SKURO! Shading light}
-location: Haarlem
+website: {url: 'http://skuro.tk/', 'title' : 'SKURO! Shading lights'}
+bio: Clojure fanatic, I love to surround myself with brilliant people. Currently serving as CTO for Sytac.
+date:   2015-10-21 17:00:00 +0200
+categories: meetup
+location: "Haarlem"
 locationUrl: http://www.sytac.nl/contact/
 ---
 
