@@ -3,7 +3,7 @@ layout: post
 categories: meetup
 title: An ElasticSearch primer
 description: How to get started with ElasticSearch and its ecosystem
-date: 2015-10-21 19:00:00
+date: 2015-10-21 17:00:00 +0200
 speaker: Carlo Sciolla
 bio: > #
   A fanatic Clojurian, I like to surround
@@ -12,7 +12,6 @@ bio: > #
 website: {'url': 'http://skuro.tk/', title: 'SKURO! Shading light}
 location: Haarlem
 locationUrl: http://www.sytac.nl/contact/
-
 ---
 
 [ElasticSearch][1] is all the rage when it comes to search engines. Its flexibility and its cloud friendly clustering model makes it a great addition to your application.
