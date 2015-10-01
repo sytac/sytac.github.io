@@ -1,6 +1,6 @@
 ---
 layout: post
-title: An ElasticSearch primer XXX
+title: An ElasticSearch primer
 description: > #
     Get a first hand experience using ElasticSearch for fun and profit
 speaker: Carlo Sciolla
