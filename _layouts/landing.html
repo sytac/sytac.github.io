@@ -2,7 +2,7 @@
 layout: index
 ---
 {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
-{% assign orderedPosts = site.posts | sort: 'date' %}
+{% assign orderedPosts = site.categories.devjam | sort: 'date' %}
 {% for post in orderedPosts %}
 {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
 {% if posttime > nowunix %}
@@ -16,7 +16,7 @@ layout: index
     <a href="#">
         <!-- <embed src="images/devjam-logo.svg" type="image/svg+xml" /> -->
 
-        <img src="images/devjam-logo.svg">
+        <img src="/images/devjam-logo.svg">
     </a>
     <div class="pay-off">
         Regular meetups for software developers. <br/><small>With food and drinks.</small>
