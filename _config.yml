@@ -1,12 +1,12 @@
 # Site settings
-title: Sytac DevJam
-email: devjam@sytac.io
+title: Sytac
+email: info@sytac.io
 meetupurl: http://www.meetup.com/Sytac-Dev-Jam
 description: > # this means to ignore newlines until "baseurl:"
   Monthly meetups for developers, brought to you with <3 by the fine people at Sytac.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://sytac.io" # the base hostname & protocol for your site
-github_username:  sytac
+github_username: sytac
 
 # Build settings
 markdown: kramdown
