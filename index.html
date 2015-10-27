@@ -1,43 +1,20 @@
 ---
-layout: home
+layout: index
 ---
-<div class="home">
-    <ul class="post-list">
-      {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
-      {% assign orderedPosts = site.posts | sort: 'date' %}
-      {% for post in orderedPosts %}
-        {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
-        {% if posttime > nowunix %}
-          {% if nextMeetup  == nil%}
-            {% assign nextMeetup = post %}
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-
-      {% for post in site.posts %}
-        {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
-          {% if posttime > nowunix %}
-            {% assign tense = 'future' %}
-              {% if upcoming  == nil%}
-                {% assign upcoming = post %}
-      <li><h3>Upcoming</h3></li>
-              {% endif %}
-              {% else %}
-                {% assign tense = 'past' %}
-                {% if previously  == nil%}
-                  {% assign previously = post %}
-      <li><h3>Previous</h3></li>
-                {% endif %}
-              {% endif %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ site.baseurl }}{{ post.url}}">{{ post.title }} - {{post.speaker}}</a>
-        </h2>
-        <span>{{post.description}}</span>
-    </li>
-    {% endfor %}
+<div class="black-death">
+  <div class="sytac-logo">
+      <a href="#">
+          <img src="/images/sytac-hexagon-long.svg">
+      </a>
+  </div>
+</div>
+<div class="orange-bar">blocks
+  <ul>
+    <li><a href="devjam">devjam - our meetup events</a></li>
+    <li><a href="dojo/react">react dojo - coding, combat style</a></li>
+    <li><a href="engineering">engineering - articles</a></li>
+    <li><a href="http://hollandjs.nl">hollandjs.nl - all dutch js events</a></li>
+    <li><a href="http://nodeschool.io/haarlem">nodeschool.io/haarlem - our nodeschool chapter</a></li>
+    <li><a href="https://github.com/sytac">github/sytac - what we create</a></li>
   </ul>
-  <p class="rss-subscribe">subscribe <a href="/{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 </div>
