@@ -2,7 +2,6 @@
 layout: home
 ---
 <div class="home">
-    <h1 class="page-heading">DevJams</h1>
     <ul class="post-list">
       {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
       {% assign orderedPosts = site.posts | sort: 'date' %}
