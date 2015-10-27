@@ -8,12 +8,23 @@
   width: 100%;
   height: 100%;
   background-color: black;
-  .sytac-logo {
-      padding-top: 150px;
-      padding-bottom: 100px;
-      width: 100%;
-      text-align: center;
+  .sytac-logo, .we-are-sytac{
+    padding-top: 150px;
+    padding-bottom: 100px;
+    width: 100%;
+    text-align: center;
+    h1 {
+      color: white;
+      font-size: 120px;
+      @include media-query($on-laptop) {
+          font-size: 80px;
+      }
+      @include media-query($on-palm) {
+          font-size: 40px;
+      }
     }
+
+  }
 }
 .orange-bar {
   text-align: center;
