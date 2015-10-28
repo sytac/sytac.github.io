@@ -16,6 +16,7 @@ $spacing-unit:     30px;
 $text-color:       #111;
 $background-color: #fff;
 $background-color-top: rgba(230, 126, 34, 1);
+$background-color-channel: #53a6ae;
 $brand-color:      $background-color-top;
 $brand-color-top: white;
 
@@ -51,5 +52,6 @@ $on-laptop:        800px;
         "base",
         "rotate",
         "layout",
+        "home",
         "syntax-highlighting"
 ;
