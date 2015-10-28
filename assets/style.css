@@ -351,6 +351,22 @@ body > header li {
     text-align: left
 }
 
+#tasks .notice {
+  display: inline-block;
+  width: 400px;
+  margin: 5px;
+  margin-top: 40px;
+  background: #e77f24;
+  position: relative;
+  padding: 14px 14px 14px 30px !important;
+  text-align: left;
+  color: white;
+}
+
+#tasks .notice > p {
+  font-size: 34px !important;
+}
+
 #tasks a.task:before {
     content: '';
     position: absolute;
