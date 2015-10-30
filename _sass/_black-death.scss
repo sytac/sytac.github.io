@@ -1,0 +1,54 @@
+.black-death {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  .sytac-logo,
+  .we-are-sytac {
+    width: 100%;
+    text-align: center;
+    h1 {
+      color: white;
+      font-size: 40px;
+      @include media-query-mf($on-laptop) {
+        font-size: 120px;
+      }
+      @include media-query-mf($on-palm) {
+        font-size: 80px;
+      }
+    }
+  }
+  .sytac-logo {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    a {
+      img {
+        width: 200px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+
+    @include bp(ipad) {
+      background: brown;
+    }
+    @include bp(ipad-portrait) {
+      background: black;
+    }
+    @include bp(iphone5-landscape) {
+      background: green;
+    }
+    @include bp(iphone) {
+      background: yellow;
+    }
+    @include bp(big-screen) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      a {
+        img {
+          width: 300px;
+        }
+      }
+    }
+  }
+}

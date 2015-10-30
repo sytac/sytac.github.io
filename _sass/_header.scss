@@ -1,0 +1,55 @@
+.site-header {
+  background-color: $background-color-top;
+  height: inherit;
+  width: 100%;
+  color: #fff;
+  font-size: 1.2em;
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  .navbar {
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+    a {
+      color: white;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    text-align: inherit;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 3%;
+    position: relative;
+    @include transformStyle(preserve-3d);
+
+    height: 100%;
+    width: 100%;
+
+    .navbar-title {
+      display: none;
+      position: static;
+      float: left;
+      left: 50%;
+    }
+    .navbar-links {
+      width: auto;
+      max-width: 1440px;
+      float: none;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 0;
+      padding-right: 0;
+      .navbar-link {
+        padding: 0 15px;
+        border-right: 1px solid rgba(255,255,255,0.3);
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+  }
+}
