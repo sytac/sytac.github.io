@@ -1,31 +1,4 @@
-.site-header {
-    height: 100%;
-    width: 100%;
-    color: #fff;
-    text-align: center;
-}
-.black-death {
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  .sytac-logo, .we-are-sytac{
-    padding-top: 150px;
-    padding-bottom: 100px;
-    width: 100%;
-    text-align: center;
-    h1 {
-      color: white;
-      font-size: 120px;
-      @include media-query($on-laptop) {
-          font-size: 80px;
-      }
-      @include media-query($on-palm) {
-          font-size: 40px;
-      }
-    }
 
-  }
-}
 .orange-bar {
   text-align: center;
   height: 200px;
@@ -90,60 +63,8 @@
         }
     }
 }
-.navbar {
-  background-color: $background-color-top;
-    font-size: 16px;
-    font-weight: 300;
-    font-style: normal;
-    color: white;
-    a {
-        color: white;
-    }
-    &:before, &:after {
-        content: '';
-        display: table;
-    }
-    text-align: inherit;
-    width: 100%;
-    margin-left: 0%;
-    margin-right: 3%;
-    position: relative;
-    -webkit-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    padding-top: 20px;
-    float: left;
-    height: 40px;
-    width: 100%;
-    .navbar-title {
-        display: none;
-        position: static;
-        float: left;
-        left: 50%;
-    }
-    .navbar-links {
-        width: auto;
-        max-width: 1440px;
-        float: none;
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-        padding-left: 0;
-        padding-right: 0;
-        .navbar-link {
-            padding: 0 15px;
-            border-right: 1px solid rgba(255,255,255,0.3);
-            &:last-child {
-                border-right: none;
-            }
-        }
-    }
-}
+
+
 .site-title {
     font-size: 26px;
     line-height: 56px;
@@ -328,26 +249,14 @@
 }
 .mission {
   text-align: center;
-  h2 {
-    font-size: 50px;
-    @include media-query($on-laptop) {
+  h3 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    @include media-query-mf($on-laptop) {
+        font-size: 40px;
+    }
+    @include media-query-mf($on-palm) {
         font-size: 30px;
     }
-    @include media-query($on-palm) {
-        font-size: 24px;
-    }
   }
-}
-.we-are-hiring {
-  position: fixed;
-  right: -70px;
-  top: 40px;
-  width: 300px;
-  height: 50px;
-  @include rotate(45);
-  text-align: center;
-  line-height: 50px;
-  background: #79A70A;
-  background: linear-gradient(#F29546 0%,  #E47D24 100%);
-  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
 }

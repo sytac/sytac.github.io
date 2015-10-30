@@ -9,3 +9,11 @@
 @mixin rotate ($deg) {
   @include transform(rotate(#{$deg}deg));
 }
+
+@mixin transformStyle($transforms) {
+     -moz-transform-style: $transforms;
+       -o-transform-style: $transforms;
+      -ms-transform-style: $transforms;
+  -webkit-transform-style: $transforms;
+          transform-style: $transforms;
+}
