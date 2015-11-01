@@ -1,0 +1,12 @@
+
+.bar {
+  width: 100%;
+  &.bar-brown {
+    background-color: $color-brownish;
+    color: $color-white;
+  }
+  &.bar-blackmetal {
+    background-color: $color-black;
+    color: $color-white;
+  }
+}
