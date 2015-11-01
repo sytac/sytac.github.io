@@ -11,10 +11,13 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
+$color-orange : rgba(230, 126, 34, 1);
+$color-turquoise: #53a6ae;;
+
 $text-color:       #111;
 $background-color: #fff;
-$background-color-top: rgba(230, 126, 34, 1);
-$background-color-channel: #53a6ae;
+$background-color-top: $color-orange;
+$background-color-channel: $color-turquoise;
 $brand-color:      $background-color-top;
 $brand-color-top: white;
 
@@ -43,6 +46,7 @@ $header-height-desktop: 40px;
         "black-death",
         "hiring",
         "layout",
+        "dojo",
         "home",
         "syntax-highlighting"
 ;
