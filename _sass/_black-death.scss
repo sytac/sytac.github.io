@@ -28,7 +28,7 @@
         padding-right: 10px;
       }
     }
-
+    /*
     @include bp(ipad) {
       background: brown;
     }
@@ -41,6 +41,7 @@
     @include bp(iphone) {
       background: yellow;
     }
+    */
     @include bp(big-screen) {
       padding-top: 60px;
       padding-bottom: 60px;
