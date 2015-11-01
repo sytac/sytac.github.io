@@ -1,0 +1,30 @@
+.channel-bar {
+  text-align: center;
+  min-height: 200px;
+  background-color: $background-color-channel;
+  a {
+    color: black;
+  }
+
+  .home-channels {
+    //max-width: 650px;
+    margin: 0 auto;
+    padding: 10px;
+    .channel {
+      padding: 10px;
+      width: 190px;
+      display: inline-block;
+      vertical-align: top;
+      a {
+        color: #fff;
+      }
+      img {
+        height: 150px;
+      }
+      .description {
+        font-size: 1.3em;
+      }
+    }
+  }
+
+}

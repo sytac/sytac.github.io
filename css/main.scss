@@ -13,11 +13,12 @@ $spacing-unit:     30px;
 
 $color-orange : rgba(230, 126, 34, 1);
 $color-turquoise: #53a6ae;;
+$color-brownish: #924500;
 
 $text-color:       #111;
 $background-color: #fff;
 $background-color-top: $color-orange;
-$background-color-channel: $color-turquoise;
+$background-color-channel: $color-brownish;
 $brand-color:      $background-color-top;
 $brand-color-top: white;
 
@@ -44,6 +45,7 @@ $header-height-desktop: 40px;
         "transforms",
         "header",
         "black-death",
+        "channels",
         "hiring",
         "layout",
         "dojo",
