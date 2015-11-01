@@ -2,6 +2,13 @@
 layout: default
 ---
 <div class="post">
+  {% if page.image %}
+    <div class="featuredImage">
+        <img src="{{ '/images/posts/' | prepend: site.baseurl | append: page.image }}" alt="" />
+      </div>
+  {% endif %}
+  <h1 class="postTitle">{{ page.title }}</h1>
+  <p class="meta">{{ page.date | date: '%B %d, %Y' }} | <span class="time">{{ page.content | number_of_words | divided_by:180 }}</span> Minute Read</p>
 
   <header class="post-header">
     <h1 class="post-title">{% if page.meetupId %}<a href="http://www.meetup.com/Sytac-Dev-Jam/events/{{ page.meetupId }}/">{% endif %}{{ page.title }}{% if page.meetupId %}</a>{% endif %}</h1>
@@ -41,4 +48,32 @@ layout: default
 
   {% endif %}
 </div>
+<!-- AUTHOR CONTACT CARD -->
+
+{% if site.authors[page.author] %}
+{% assign author = site.authors[page.author] %}
+<div class="avatar">
+    <div class="avatar-persona">
+        <img src="{{ '/images/authors/' | prepend: site.baseurl | append: author.avatar }}" />
+    </div>
+    <div class="avatar-bio">
+        <h4>by {{author.fullname}}</h4>
+        <h5>{{ author.role }} at Sytac IT Consulting</h5>
+        <span><em>{{ author.bio }}</em></span>
+    </div>
+</div>
+{% endif  %}
 <link rel="stylesheet" href="{{ site.baseurl }}{{ "/css/post.css"}}">
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+ /* * * CONFIGURATION VARIABLES * * */
+ var disqus_shortname = 'sytac-engineering';
+
+ /* * * DON'T EDIT BELOW THIS LINE * * */
+ (function() {
+     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+     dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+ })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>

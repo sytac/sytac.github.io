@@ -9,3 +9,18 @@ url: "http://sytac.io"
 github_username: sytac
 # Build settings
 markdown: kramdown
+authors:
+  pierangelo:
+    fullname: Pierangelo Cecchetto
+    avatar: pierangelo.jpg
+    role: Tech Lead
+    bio: I love Functional Programming, as it allows to express modularity in its essence, to focus on the core of problems, to generalize solutions, and to express (mathematical) reasoning, resulting ultimately in a significant productivity gain. I am transitioning more and more towards Scala (from Java), of which I love expressiveness, conciseness, strong type system.
+    twitter: pierangelocecc
+    web: https://pierangeloc.github.io
+  carlo:
+    fullname: Carlo Sciolla
+    avatar: carlo.jpg
+    role: CTO
+    bio: From Sardinia, with love. I'm a seasoned developer who craves functional excellence as much as attention to the aesthetics of the technical solution. I have been working with web technologies so long that I almost forgot my secret C++ and J2ME past. Nowadays I'm a Clojure advocate, I love organising tech events and surround myself with brilliant people.
+    twitter: skuro
+    web: http://skuro.tk
