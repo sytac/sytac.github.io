@@ -1,0 +1,13 @@
+{% if site.authors[page.author] %}
+{% assign author = site.authors[page.author] %}
+<div class="avatar">
+    <div class="avatar-persona">
+        <img src="{{ '/images/authors/' | prepend: site.baseurl | append: author.avatar }}" />
+    </div>
+    <div class="avatar-bio">
+        <h4>by {{author.fullname}}</h4>
+        <h5>{{ author.role }} at Sytac IT Consulting</h5>
+        <span><em>{{ author.bio }}</em></span>
+    </div>
+</div>
+{% endif  %}
