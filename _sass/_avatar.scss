@@ -1,0 +1,19 @@
+.avatar {
+  min-height: 150px;
+  margin-bottom: 20px;
+  .avatar-persona {
+    float: left;
+    img {
+      width: 100px;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      border-radius: 100px;
+      margin: 0px 15px 0px 0px;
+    }
+  }
+  .avatar-bio {
+    h4, h5 {
+      margin: 5px;
+    }
+  }
+}
