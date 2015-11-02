@@ -6,7 +6,7 @@ layout: index
     <div class="home" id="home">
       <h1 class="pageTitle">Recent Posts</h1>
       <ul class="post-list">
-        {% for post in site.engineering %}
+        {% for post in site.engineering reversed | sort: 'date' %}
         <li>
           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
