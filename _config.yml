@@ -10,6 +10,13 @@ github_username: sytac
 # Build settings
 markdown: kramdown
 authors:
+  jp:
+    fullname: JP Wesselink
+    avatar: jp.png
+    role: CTO
+    bio: Loves the web, JavaScript, organising meetups, empowering devs, conferences, beer and \m/etal.
+    twitter: jp10k
+    web: https://jpwesselink.github.io
   pierangelo:
     fullname: Pierangelo Cecchetto
     avatar: pierangelo.jpg
