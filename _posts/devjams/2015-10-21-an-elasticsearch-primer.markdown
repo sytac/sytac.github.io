@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: devjam
 categories: devjam
 title: An ElasticSearch primer
 description: > #

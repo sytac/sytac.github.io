@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: devjam
 categories: devjam
 title: Meeting avoidance
 description: How and when to avoid meetings and have more time to write code.

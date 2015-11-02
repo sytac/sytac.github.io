@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: devjam
 categories: devjam
 title: Functional programming in the browser with ClojureScript
 description: > #
