@@ -3,7 +3,7 @@ layout: index
 ---
 
 {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
-{% assign orderedPosts = site.categories.devjam | sort: 'date' %}
+{% assign orderedPosts = site.devjam | sort: 'date' %}
 {% for post in orderedPosts %}
 {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
 {% if posttime > nowunix %}
@@ -59,7 +59,7 @@ layout: index
         <h1 class="page-heading">DevJam</h1>
         <ul class="post-list">
           {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
-          {% assign orderedPosts = site.categories.devjam | sort: 'date' %}
+          {% assign orderedPosts = site.devjam | sort: 'date' %}
           {% for post in orderedPosts %}
             {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
             {% if posttime > nowunix %}
@@ -69,7 +69,7 @@ layout: index
             {% endif %}
           {% endfor %}
 
-          {% for post in site.categories.devjam %}
+          {% for post in site.devjam %}
             {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
               {% if posttime > nowunix %}
                 {% assign tense = 'future' %}

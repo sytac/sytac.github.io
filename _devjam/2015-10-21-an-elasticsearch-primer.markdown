@@ -1,6 +1,5 @@
 ---
 layout: devjam
-categories: devjam
 title: An ElasticSearch primer
 description: > #
     Get a first hand experience using ElasticSearch for fun and profit

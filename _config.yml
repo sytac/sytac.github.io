@@ -9,6 +9,15 @@ url: "http://sytac.io"
 github_username: sytac
 # Build settings
 markdown: kramdown
+collections:
+  devjam:
+    path: "_devjam"
+    output: true
+    permalink: /devjam/:year/:month/:day/:title/
+  engineering:
+    path: "_engineering"
+    output: true
+    permalink: /engineering/:year/:month/:day/:title/
 authors:
   jp:
     fullname: JP Wesselink

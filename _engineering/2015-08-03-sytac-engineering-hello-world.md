@@ -1,6 +1,5 @@
 ---
 layout: post
-categories: engineering
 title:  "Hello, World!"
 date:   2015-08-03
 image:  touring.jpg

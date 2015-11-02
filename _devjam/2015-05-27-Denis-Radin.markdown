@@ -1,6 +1,5 @@
 ---
 layout: devjam
-categories: devjam
 title: Developer, airspace is closer than you may think
 description: > #
   On NASA JPL coding guidelines for Javascript and flight instruments build with browser tech.

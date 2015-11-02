@@ -1,6 +1,5 @@
 ---
 layout: devjam
-categories: devjam
 title: Functional programming in the browser with ClojureScript
 description: > #
   In this next episode of the DevJam, Michiel Borkent will introduce us to the world of ClojureScript, a new addition to the Frontend Development landscape which delivers functional programming and powerful abstractions to develop complex web applications without drowning in an ocean of callbacks.

@@ -1,6 +1,5 @@
 ---
 layout: post
-categories: engineering
 title:  "Five rules to the perfect development test"
 date:   2015-09-03
 image:  barchart.jpg
