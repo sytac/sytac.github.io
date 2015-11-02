@@ -18,12 +18,6 @@ layout: index
 
         {% endfor %}
       </ul>
-      <!-- Pagination links -->
-      <div class="pagination">
-        {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous button__outline">Newer Posts</a> {% endif %} {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next button__outline">Older Posts</a> {% endif %}
-      </div>
     </div>
   </div>
 </div>
