@@ -13,11 +13,11 @@ collections:
   devjam:
     path: "_devjam"
     output: true
-    permalink: /devjam/:year/:month/:day/:title/
+    permalink: /:collection/:year/:month/:day/:title/
   engineering:
     path: "_engineering"
     output: true
-    permalink: /engineering/:year/:month/:day/:title/
+    permalink: /:collection/:path/
 authors:
   jp:
     fullname: JP Wesselink
@@ -43,7 +43,7 @@ authors:
   davide:
     fullname: Davide Fiorello
     avatar: davide.jpg
-    role: Fullstack devel
+    role: Fullstack Dev
     bio: Application Developer in a wide variety of business applications. Particularly specialized in client/server and database design primarly using Php, Zend Framework, NodeJs, Postgres an MongoDb and frontend development with AngularJs and ReactJS.
     twitter: davidefiorello
     web: https://github.com/codeflyer
