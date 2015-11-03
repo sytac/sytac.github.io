@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Five rules to the perfect development test"
-date:   2015/09/03
+date:   2015-09-03
 image:  barchart.jpg
 author: carlo
 ---

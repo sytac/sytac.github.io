@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Extend MongoDb shell"
-date:   2015/10/10
+date:   2015-10-10
 tags:   mongodb
 author: davide
 ---
@@ -40,19 +40,18 @@ DBCollection.prototype.findById = function (id, projection) {
 
 Writing this code directly in the shell will add a method ***findById*** to the class ***DBCollection***.
 
-{% highlight javascript %} 
+{% highlight javascript %}
 db.foo.findById(42)
 {% endhighlight %}
 
 To avoid having to re-enter every time this method, and others that will be useful in our daily administration of MongoDb you can use the -shell parameters when you start the mongo client
 
-{% highlight bash %} 
+{% highlight bash %}
 mongo --shell /usr/local/mongodb_ext/collectionExt.js
 {% endhighlight %}
 
 or directly enter the directive in your mongorc.js located in the user's home, and that is automatically imported every time.
 
-{% highlight javascript %} 
+{% highlight javascript %}
 load('/usr/local/mongodb_ext/collectionExt.js');
 {% endhighlight %}
-

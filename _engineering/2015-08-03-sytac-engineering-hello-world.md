@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hello, World!"
-date:   2015/08/03
+date:   2015-08-03
 image:  touring.jpg
 author: carlo
 ---
