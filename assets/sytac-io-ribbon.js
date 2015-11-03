@@ -6,7 +6,6 @@
         elTop = Math.floor(el.getBoundingClientRect().top) + document.body.scrollTop;
 
     document.addEventListener('scroll', function (e) {
-        console.log(document.body.scrollTop, elTop);
         if (document.body.scrollTop > elTop) {
             !ribbon.className.match(/\sinverse/) && (ribbon.className += ' inverse');
         } else {

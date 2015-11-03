@@ -6,7 +6,7 @@
 /* Left will inherit from right (so we don't need to duplicate code) */
 .sytac-io-ribbon {
   /* The right and left classes determine the side we attach our banner to */
-  position: fixed;
+  position: absolute;
 
   /* Add a bit of padding to give some substance outside the "stitching" */
   padding: 2px 0;
@@ -61,7 +61,7 @@
 .sytac-io-ribbon-wrapper {
   width: 150px;
   height: 150px;
-  position: absolute;
+  position: fixed;
   overflow: hidden;
   top: 0;
   z-index: 9999;
