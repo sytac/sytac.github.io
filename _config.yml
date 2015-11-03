@@ -40,3 +40,10 @@ authors:
     bio: From Sardinia, with love. I'm a seasoned developer who craves functional excellence as much as attention to the aesthetics of the technical solution. I have been working with web technologies so long that I almost forgot my secret C++ and J2ME past. Nowadays I'm a Clojure advocate, I love organising tech events and surround myself with brilliant people.
     twitter: skuro
     web: http://skuro.tk
+  davide:
+    fullname: Davide Fiorello
+    avatar: davide.jpg
+    role: Fullstack devel
+    bio: Application Developer in a wide variety of business applications. Particularly specialized in client/server and database design primarly using Php, Zend Framework, NodeJs, Postgres an MongoDb and frontend development with AngularJs and ReactJS.
+    twitter: davidefiorello
+    web: https://github.com/codeflyer
