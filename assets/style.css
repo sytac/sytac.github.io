@@ -1,0 +1,728 @@
+body {
+  font-family: 'Open-Sans', sans-serif;
+}
+
+blockquote {
+  color: #555;
+  font-style: italic;
+}
+
+blockquote:before {
+  content: "\201F";
+  color: #aaa;
+  font-weight: 900;
+  font-size: xx-large;
+}
+
+#top .container > div h2, #rules .rules-table .rules li:before, #rewards .place, #contact .email, footer .copy, .date {
+    font-weight: 400
+}
+
+#rewards h2, #tasks h2, #winners h2, #rules h2, #ranks h2, #ranks h1 {
+    letter-spacing: 1.2px
+}
+
+#rules .container .text, #rules .rules-table .rules li, #winners .container .text, #ranks .container .text {
+    color: #555
+}
+
+#rewards h2, #tasks h2, #winners h2 {
+    position: relative;
+    width: 674px;
+    font-size: 21px
+}
+
+#rewards img.prize {
+  padding-bottom: 50px;
+}
+
+#winners h2 {
+    margin: 0 auto
+}
+
+#rewards h2:before, #tasks h2:before, #winners h2:before, #rewards h2:after, #tasks h2:after, #winners h2:after {
+    content: '';
+    border: 5px solid #000;
+    border-bottom: none;
+    position: absolute;
+    width: 280px;
+    height: 22px;
+    top: .62em
+}
+
+#rewards h2:before, #tasks h2:before, #winners h2:before {
+    left: 0;
+    border-right: none
+}
+
+#rewards h2:after, #tasks h2:after, #winners h2:after {
+    right: 0;
+    border-left: none
+}
+
+i[class^=icon], #tasks a.task:before {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-repeat: no-repeat;
+    background-position: 50% 50%
+}
+
+section {
+    width: 100%
+}
+
+section .container {
+    position: relative
+}
+
+#top .container:after, #rules .container:after, #tasks .container:after {
+    position: absolute;
+    content: '';
+    width: 96px;
+    height: 96px;
+    top: 0;
+    left: -9600px
+}
+
+#rules .container:after {
+    top: auto;
+    bottom: 0
+}
+
+nav {
+    position: relative
+}
+
+nav a {
+    display: inline-block;
+    line-height: 106px;
+    padding: 0 30px;
+    font-size: 18px
+}
+
+nav a:hover {
+    color: #e77f24
+}
+
+body > header {
+    display: block;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 106px;
+    background: #fff
+}
+
+body > header ul {
+    display: block;
+    text-align: right
+}
+
+body > header li {
+    display: inline-block
+}
+
+#top {
+    background-color: #fff
+}
+
+#top .container {
+    margin-top: 106px;
+    height: 800px;
+    padding: 96px 96px 192px
+}
+
+#top .container:after {
+    box-shadow: 9504px 0 #e77f24, 9696px 0 #e77f24, 9792px 0 #e77f24, 10272px 0 #e77f24, 10464px 0 #e77f24, 9600px 96px #e77f24, 10656px 96px #e77f24, 9408px 192px #e77f24, 10464px 192px #e77f24, 10560px 192px #e77f24, 9504px 288px #e77f24, 9600px 288px #e77f24, 10560px 288px #e77f24, 9696px 384px #e77f24, 10656px 384px #e77f24, 9696px 480px #e77f24, 10464px 480px #e77f24
+}
+
+#top .container .timer {
+    color: #000;
+    font-size: 1.1em
+}
+
+#top .container > div {
+    background: #fff;
+    height: 288px;
+    padding: 33px 0
+}
+
+#top .container > div h2 {
+    font-size: 30px
+}
+
+#top .container > div h1 {
+    font-size: 40px;
+    margin: 0 0 16px;
+    font-weight: 400;
+    color: #e77f24
+}
+
+#top .container > div > div {
+    padding: 0 120px;
+    font-size: 15px
+}
+
+#top .container > div > div .hf {
+    display: block;
+    font-size: 17px;
+    padding: 5px 0 8px
+}
+
+#top .container > div > div a {
+    color: #e77f24;
+}
+
+#rules {
+    background-color: #fff
+}
+
+#rules .container {
+    height: 861.12px
+}
+
+#rules .container:after {
+    box-shadow: 10656px -192px #e77f24, 9408px -96px #e77f24, 10560px -96px #e77f24, 9504px 0 #e77f24, 10656px 0 #e77f24
+}
+
+#rules .container .text {
+    margin: 29px 0 68px;
+    font-size: 17px
+}
+
+#rules i {
+    margin: 48px 0 33px
+}
+
+#rules h2 {
+    color: #e77f24;
+    font-size: 25px;
+    line-height: 1.2
+}
+
+#rules .rules-table {
+    margin: 10px -5px
+}
+
+#rules .rules-table > * {
+    border: 5px solid #e77f24
+}
+
+#rules .rules-table aside {
+    position: relative;
+    border-top: none;
+    border-right: none;
+    text-align: left;
+    width: 390px;
+    float: left;
+    font-size: 26px;
+    padding: 20px 0 20px 26px
+}
+
+#rules .rules-table .rules-file {
+    position: absolute;
+    display: block;
+    width: 96px;
+    height: 96px;
+    right: -5px;
+    bottom: -96px;
+    background: #e77f24 url(../assets/icon-rules.svg) 50% 50% no-repeat
+}
+
+#rules .rules-table header h2 {
+    padding: 15px 0;
+    margin: 0;
+    font-size: 25px
+}
+
+#rules .rules-table .rules {
+    border-top: none;
+    text-align: left;
+    width: 580px;
+    float: left;
+    font-size: 18px;
+    padding: 10px
+}
+
+#rules .rules-table .rules ol {
+    list-style: none;
+    counter-reset: li-counter;
+    padding-right: 25px
+}
+
+#rules .rules-table .rules li {
+    position: relative;
+    margin: 6px 0
+}
+
+#rules .rules-table .rules li:before {
+    color: #000;
+    position: absolute;
+    top: 0;
+    left: -1.1em;
+    width: 1em;
+    content: counter(li-counter) '.';
+    counter-increment: li-counter
+}
+
+#rewards {
+    background-color: #e77f24;
+    color: #fff
+}
+
+#rewards .container {
+    height: 778px;
+    padding-top: 40px
+}
+
+#rewards h2 {
+    margin: 20px auto 0
+}
+
+#rewards h2:before, #rewards h2:after {
+    border-color: #FF9A65
+}
+
+#rewards ul {
+    margin-top: 50px
+}
+
+#rewards .place {
+    display: block;
+    color: #FFC3A5;
+    font-size: 20px
+}
+
+#rewards .reward {
+    display: block;
+    font-size: 28px;
+    padding-bottom: 20px
+}
+
+#rewards sup {
+    font-size: .6em
+}
+
+#tasks {
+    background-color: #000;
+    color: #fff
+}
+
+#tasks .container {
+    height: 672px;
+    padding-top: 40px
+}
+
+#tasks .container:after {
+    box-shadow: 9408px 0 #e77f24, 10560px 0 #e77f24, 9504px 96px #e77f24, 10656px 96px #e77f24, 9600px 576px #e77f24, 10656px 576px #e77f24
+}
+
+#tasks .container > div {
+    font-size: 0;
+    padding: 50px 200px
+}
+
+#tasks .tasks-list {
+    display: block
+}
+
+.not-ready #tasks .tasks-list {
+    display: none
+}
+
+#tasks h2 {
+    margin: 20px auto 0
+}
+
+#tasks h2:before, #tasks h2:after {
+    border-color: #262626
+}
+
+#tasks a.task {
+    font-size: 16px;
+    display: inline-block;
+    width: 250px;
+    margin: 5px;
+    background: #e77f24;
+    position: relative;
+    padding: 14px 14px 14px 30px;
+    text-align: left
+}
+
+#tasks .notice {
+  display: inline-block;
+  width: 400px;
+  margin: 5px;
+  margin-top: 40px;
+  background: #e77f24;
+  position: relative;
+  padding: 14px 14px 14px 30px !important;
+  text-align: left;
+  color: white;
+}
+
+#tasks .notice > p {
+  font-size: 34px !important;
+}
+
+#tasks a.task:before {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 0;
+    height: 100%
+}
+
+.not-ready #tasks a.task {
+    cursor: default
+}
+
+.not-ready #tasks a.task:before {
+    content: none
+}
+
+#tasks span.task-no {
+    position: relative;
+    display: block;
+    color: #FFC3A5
+}
+
+#tasks span.task {
+    position: relative;
+    display: block;
+    color: #fff
+}
+
+#tasks .tasks-counter {
+    display: none
+}
+
+.not-ready #tasks .tasks-counter {
+    display: block
+}
+
+#tasks .tasks-counter h3 {
+    font-size: 50px;
+    font-weight: 400
+}
+
+#tasks .tasks-counter .sample-task {
+    display: inline-block;
+    text-align: center;
+    padding-top: 60px;
+    clear: both;
+    font-size: 24px;
+    color: #FFC3A5
+}
+
+#tasks .tasks-counter .counter {
+    text-align: center
+}
+
+#tasks .tasks-counter .counter div {
+    text-transform: uppercase;
+    font-size: 12px;
+    width: 6em;
+    padding: .8em;
+    background-color: #e77f24;
+    margin-left: 4em;
+    position: relative;
+    display: inline-block
+}
+
+#tasks .tasks-counter .counter div span {
+    font-size: 3em;
+    color: #fff;
+    display: block;
+    float: none
+}
+
+#tasks .tasks-counter .counter .days {
+    margin-left: 0
+}
+
+#tasks .tasks-counter .hours:before, #tasks .tasks-counter .minutes:before {
+    content: ':';
+    position: absolute;
+    font-size: 3em;
+    right: -.75em;
+    color: #e77f24
+}
+
+#contact {
+    height: 432px;
+    padding-top: 105px
+}
+
+#contact h2 {
+    color: #e77f24;
+    font-size: 36px;
+    margin: 6px 0 27px
+}
+
+#contact hr {
+    width: 150px
+}
+
+#contact div {
+    padding-top: 12px;
+    font-size: 25px;
+    line-height: 1.4
+}
+
+#contact .email {
+  display: block;
+  font-weight: bold;
+}
+
+footer {
+    background-color: #e77f24;
+    height: 38.4px;
+    overflow: hidden;
+    min-width: 960px
+}
+
+footer div {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    height: 100%
+}
+
+footer .copy {
+    line-height: 38.4px;
+    color: #fff;
+    font-size: 12px
+}
+
+#winners {
+    background-color: #fff
+}
+
+#winners .container {
+    height: 672px;
+    padding-top: 40px;
+    background-color: #e77f24
+}
+
+#winners .container .text {
+    margin: 29px 0 68px;
+    font-size: 17px
+}
+
+#winners i {
+    margin: 48px 0 33px
+}
+
+#winners h2 {
+    margin-top: 20px;
+    color: #fff
+}
+
+#winners h2:before, #winners h2:after {
+    border-color: #FF9A65
+}
+
+#winners .filler {
+    width: 17%;
+    float: left;
+    visibility: hidden
+}
+
+#winners .first {
+    margin: 2%
+}
+
+#winners .first, #winners .second, #winners .third {
+    float: left;
+    width: 18%
+}
+
+#winners .third {
+    margin: 2%
+}
+
+#winners .first div, #winners .second div, #winners .third div {
+    padding: 38px 12px 12px;
+    background-color: #fff
+}
+
+#winners .first div p, #winners .second div p, #winners .third div p {
+    margin: 1px
+}
+
+#winners .first h3, #winners .second h3, #winners .third h3 {
+    color: #fff;
+    font-size: 64px;
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+#winners .second {
+    margin: 64px 2% 2%
+}
+
+#winners .third {
+    margin-top: 128px
+}
+
+#winners .name {
+    font-weight: 700
+}
+
+#winners .name, #winners .points {
+    color: #e77f24;
+    font-size: 24px;
+    text-align: left
+}
+
+#winners .label {
+    font-weight: 700
+}
+
+#winners .label, #winners .name2 {
+    text-align: left;
+    font-size: 12px;
+    display: block
+}
+
+#winners .name2 {
+    margin: 0;
+    color: #e77f24
+}
+
+#ranks .container {
+    margin-top: 55px;
+    height: 861.12px
+}
+
+#ranks .container .text {
+    margin: 29px 0 88px;
+    font-size: 17px
+}
+
+#ranks i {
+    margin: 48px 0 33px
+}
+
+#ranks h2 {
+    color: #e77f24;
+    font-size: 25px;
+    line-height: 1.2;
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+
+#ranks h1, #ranks .congrats {
+    color: #e77f24;
+    font-size: 28px;
+    line-height: 1.2
+}
+
+#ranks .container {
+    height: auto
+}
+
+#ranks .container .header-nickname, #ranks .container .header-result, #ranks .container .header-date {
+    color: #e77f24;
+    font-size: 18px;
+    line-height: 1.2;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    text-align: left
+}
+
+#ranks .container .rank-nickname, #ranks .container .rank-date, #ranks .container .rank-result {
+    text-align: left;
+    margin-bottom: 50px
+}
+
+#ranks .container .date {
+    color: #000
+}
+
+#ranks .container .time {
+    color: #e77f24;
+    font-weight: 700
+}
+
+#ranks .container div.rank {
+    clear: both
+}
+
+#ranks .container div.rank div:not(.filler):not(.results) {
+    width: 30%;
+    float: left
+}
+
+#ranks .container div.rank div.results {
+    width: 14%;
+    float: left
+}
+
+#ranks .container div.rank div.filler {
+    width: 16%;
+    float: left;
+    visibility: hidden;
+    height: 100%
+}
+
+#ranks div.congrats-box {
+    margin-top: 550px;
+    width: 100%;
+    text-align: center
+}
+
+#ranks ol {
+    margin: 0;
+    padding-top: 0
+}
+
+#ranks .rank-result li {
+    color: #e77f24;
+    font-weight: 700
+}
+
+body, html, section, h2 {
+    padding: 0;
+    margin: 0
+}
+
+* {
+    box-sizing: border-box
+}
+
+hr {
+    width: 30px;
+    border: 0;
+    border-top: 1px solid #E7E7E7
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #000
+}
+
+main {
+    overflow: hidden;
+    min-width: 960px;
+    text-align: center
+}
+
+nav, .container {
+    width: 960px;
+    margin: auto
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.date {
+    color: #e77f24
+}
