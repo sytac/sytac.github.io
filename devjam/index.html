@@ -59,7 +59,8 @@ layout: index
         <div class="home">
             <h1 class="page-heading">DevJam</h1>
             <ul class="post-list">
-                {% for post in site.devjam %}
+                {% assign orderedPosts = site.devjam | sort: 'date' | reverse %}
+                {% for post in orderedPosts %}
                   {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
                   {% if posttime > nowunix %}
                     {% assign tense = 'future' %}
