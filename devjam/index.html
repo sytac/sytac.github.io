@@ -59,15 +59,6 @@ layout: index
         <div class="home">
             <h1 class="page-heading">DevJam</h1>
             <ul class="post-list">
-                {% for post in orderedPosts %}
-                  {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
-                  {% if posttime > nowunix %}
-                    {% if nextMeetup  == nil%}
-                      {% assign nextMeetup = post %}
-                    {% endif %}
-                  {% endif %}
-                {% endfor %}
-
                 {% for post in site.devjam %}
                   {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
                   {% if posttime > nowunix %}

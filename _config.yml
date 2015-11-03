@@ -13,7 +13,7 @@ collections:
   devjam:
     path: "_devjam"
     output: true
-    permalink: /:collection/:year/:month/:day/:title/
+    permalink: /:collection/:path/
   engineering:
     path: "_engineering"
     output: true
