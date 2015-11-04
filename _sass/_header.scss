@@ -5,8 +5,7 @@
   color: #fff;
   font-size: 1.2em;
   display: inline-block;
-  padding-top: 10px;
-  padding-bottom: 10px;
+
   .navbar {
     font-weight: 300;
     font-style: normal;
@@ -44,8 +43,17 @@
       padding-left: 0;
       padding-right: 0;
       .navbar-link {
-        padding: 0 15px;
+        padding: 10px 15px;
+        display: inline-block;
         border-right: 1px solid rgba(255,255,255,0.3);
+        &.navbar-link-logo {
+          max-height: 1.3em;
+          background-color: white;
+          img {
+            max-height: 3.2em;
+            margin-top: -26px;
+          }
+        }
         &:last-child {
           border-right: none;
         }
