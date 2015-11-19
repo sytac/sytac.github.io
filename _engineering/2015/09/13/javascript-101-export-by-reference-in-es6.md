@@ -6,7 +6,7 @@ tags:   javascript 101
 author: davide
 ---
 
-At first glance, you'd think that the ES6 syntax to import/export 
+At first glance, you'd think that the ES6 syntax to import/export
 modules, is simply something more elegant of the old CommonJs syntax
 and that the following relation is *true*:
 
@@ -52,7 +52,7 @@ Log:  2
 {% endhighlight %}
 
 
-The result obtained is the same expected. 
+The result obtained is the same expected.
 The `add` method increment the value of the internal `counter` module variable `current`,
  but this doesn't change the value exported, which it is precisely a `value`.
 
@@ -81,8 +81,7 @@ End:  2
 {% endhighlight %}
 
 
-The result is completely unexpected. 
+The result is completely unexpected.
 The changes done internally to the module are reflected outside.
-The reason is that the `export` return a kind of pointer 
-to the internal variable `current` instead of the value.
-
+The reason is that the `export` return a kind of pointer
+to the internal variable `current` instead of the value!
