@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Capture the Flag solutions: dothash"
+description: "Walkthrough of the first quiz for the Sytac Capture the Flag competition"
 date:   2015-11-08
 tags:   ctf, jfall
 author: carlo
