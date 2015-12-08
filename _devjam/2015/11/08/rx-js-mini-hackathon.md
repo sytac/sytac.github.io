@@ -2,10 +2,9 @@
 layout: devjam
 title: An RxJS mini hackathon
 description: > #
-    After the great introduction of RxJS from our friends at
-    <a href="http://www.meetup.com/Reactive-Amsterdam/events/226771352/">Reactive Amsterdam</a>
+    After the great introduction of RxJS from our friends at Reactive Amsterdam>
     we decided to keep studying. Tonight we meet to hack together some code to experiment
-    with <a href="https://github.com/Reactive-Extensions/RxJS">Reactive Extensions</a>.
+    with Reactive Extensions.
 speaker: Davide Fiorello
 website: {url: 'https://github.com/codeflyer', title: 'Davide on GitHub'}
 bio: Application Developer in a wide variety of business applications. Particularly specialized in client/server and database design primarly using Php, Zend Framework, NodeJs, Postgres an MongoDb and frontend development with AngularJs and ReactJS.
