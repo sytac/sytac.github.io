@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Capture the Flag solutions: executable"
-description: "The second Sytac Capture the Flag competition walkthrough"
+description: "The second Sytac Capture the Flag competition walkthrough: of executable JARs and metadata"
 date:   2016-01-14
 tags:   ctf, jfall
 author: carlo
