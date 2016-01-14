@@ -2,7 +2,7 @@
 layout: post
 title:  "Hello, World!"
 date:   2015-08-03
-image:  touring.jpg
+image:  engineering/touring.jpg
 author: carlo
 ---
 

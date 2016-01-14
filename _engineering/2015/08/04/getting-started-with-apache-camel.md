@@ -3,7 +3,7 @@ layout: post
 title:  "Getting started with Apache Camel"
 date:   2015-08-04
 tags:   integration eip apache-camel
-image:  eip.jpg
+image:  engineering/eip.jpg
 author: pierangelo
 ---
 
