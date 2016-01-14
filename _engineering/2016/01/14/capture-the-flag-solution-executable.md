@@ -48,7 +48,8 @@ Archive:  executable-1.0.jar
 Not much in there that catches the eye, just a regular JAR file that (you can see it from
 the presence of the `pom.xml`) was created with [Apache Maven](https://maven.apache.org/).
 Of all the files that are in the JAR, the first candidate to contain something interesting
-is the `MANIFEST.MF`, right? Let's see its content:
+is the `MANIFEST.MF`, right? Indeed, before diving into bytecode or decompiled sources,
+let's first see the metadata for the jar:
 
 {% highlight bash %}
 $ unzip -j executable-1.0.jar META-INF/MANIFEST.MF
