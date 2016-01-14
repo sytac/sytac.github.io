@@ -43,6 +43,12 @@
   <meta property="og:url" content="http://sytac.io{{ page.url }}" />
   <meta property="og:image" content="http://sytac.io/images/sytac-hexagon-long.svg" />
 
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@sytac" />
+  <meta name="twitter:title" content="{{ page.title }}" />
+  <meta name="twitter:description" content="{{ page.description }}" />
+  <meta name="twitter:image" content="http://sytac.io/images/sytac-hexagon-long.svg" />
+
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
