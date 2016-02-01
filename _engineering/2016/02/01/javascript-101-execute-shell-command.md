@@ -9,7 +9,7 @@ author: jp
 Execute a shell command - the quick and dirty way.
 
 {% highlight javascript %}
-console.log(require('child_process').execSync('ls -la'));
+console.log(require('child_process').execSync('ls -la').toString());
 {% endhighlight %}
 
 How about async?
