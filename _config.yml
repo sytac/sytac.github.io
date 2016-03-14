@@ -9,7 +9,6 @@ url: "http://sytac.io"
 github_username: sytac
 # Build settings
 markdown: kramdown
-include:  [.well-known]
 collections:
   devjam:
     path: "_devjam"
